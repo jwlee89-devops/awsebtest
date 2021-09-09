@@ -9,7 +9,7 @@ services:
     environment:
       Container: PHP
   nginx-proxy:
-    image: "nginx"
+    image: "347473060929.dkr.ecr.ap-northeast-2.amazonaws.com/awesome"
     ports:
       - "80:80"
     volumes:
