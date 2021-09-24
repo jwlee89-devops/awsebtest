@@ -13,7 +13,7 @@ services:
       options:
         awslogs-region: ap-northeast-2
         awslogs-group: EB/GROUP/LOGS
-        awslogs-stream-prefix: "php"
+        awslogs-multiline-pattern: '^php'
   nginx-proxy:
     image: "347473060929.dkr.ecr.ap-northeast-2.amazonaws.com/awesome"
     ports:
