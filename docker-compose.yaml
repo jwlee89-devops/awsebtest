@@ -33,4 +33,4 @@ services:
         awslogs-group: EB/GROUP/TEST
         awslogs-stream: 'nginx-proxy'
         awslogs-create-group: 'true'
-        tag: '-{{.ID}}'
+        tag: 'nginx-{{.ID}}'
