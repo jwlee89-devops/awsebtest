@@ -25,3 +25,9 @@ services:
     mem_limit: 128m
     links:
       - php-app
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ap-northeast-2
+        awslogs-group: EB/GROUP/LOGS
+        awslogs-stream: nginx-proxy
