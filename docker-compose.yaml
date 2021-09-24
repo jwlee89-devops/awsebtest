@@ -13,8 +13,8 @@ services:
       options:
         awslogs-region: ap-northeast-2
         awslogs-group: EB/GROUP/TEST
-        awslogs-stream: PHP
-        awslogs-create-group: true
+        awslogs-stream: 'PHP-{{.ID}}'
+        awslogs-create-group: 'true'
   nginx-proxy:
     image: "347473060929.dkr.ecr.ap-northeast-2.amazonaws.com/awesome"
     ports:
@@ -31,5 +31,5 @@ services:
       options:
         awslogs-region: ap-northeast-2
         awslogs-group: EB/GROUP/TEST
-        awslogs-stream: nginx-proxy
-        awslogs-create-group: true
+        awslogs-stream: 'nginx-proxy-{{.ID}}'
+        awslogs-create-group: 'true'
