@@ -12,7 +12,7 @@ services:
       driver: awslogs
       options:
         awslogs-region: ap-northeast-2
-        awslogs-group: EB/GROUP/TEST
+        awslogs-group: EB/GROUP/TEST1
         tag: 'PHP-{{.ID}}'
         awslogs-create-group: 'true'
   nginx-proxy:
@@ -30,7 +30,7 @@ services:
       driver: awslogs
       options:
         awslogs-region: ap-northeast-2
-        awslogs-group: EB/GROUP/TEST
+        awslogs-group: EB/GROUP/TEST1
         awslogs-stream: 'nginx-proxy'
         awslogs-create-group: 'true'
         tag: 'nginx-{{.ID}}'
