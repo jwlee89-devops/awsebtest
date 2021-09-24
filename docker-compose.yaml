@@ -14,7 +14,7 @@ services:
         awslogs-region: ap-northeast-2
         awslogs-group: EB/GROUP/TEST
         awslogs-stream: 'PHP'
-        awslogs-tag: '-{{.ID}}'
+        tag: '-{{.ID}}'
         awslogs-create-group: 'true'
   nginx-proxy:
     image: "347473060929.dkr.ecr.ap-northeast-2.amazonaws.com/awesome"
@@ -34,4 +34,4 @@ services:
         awslogs-group: EB/GROUP/TEST
         awslogs-stream: 'nginx-proxy'
         awslogs-create-group: 'true'
-        awslogs-tag: '-{{.ID}}'
+        tag: '-{{.ID}}'
