@@ -12,7 +12,8 @@ services:
       driver: awslogs
       options:
         awslogs-region: ap-northeast-2
-        awslogs-group: EB/GROUP/LOGS 
+        awslogs-group: EB/GROUP/LOGS
+        awslogs-stream: PHP
   nginx-proxy:
     image: "347473060929.dkr.ecr.ap-northeast-2.amazonaws.com/awesome"
     ports:
